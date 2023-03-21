@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   
-  <title>report of my lab | Hexo</title>
-  <meta name="author" content="John Doe">
+  <title>report of my lab | Blog of flyyoung02</title>
+  <meta name="author" content="Ziyang">
   
   <meta name="description" content="利用云平台搭建个人博客实验目的：熟悉个人博客系统的搭建。具体包括：注册Github账号，搭建Hexo环境并实现个人博客搭建，撰写实验报告。
 一、前言：了解Github和Hexo Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓">
@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:title" content="report of my lab"/>
-  <meta property="og:site_name" content="Hexo"/>
+  <meta property="og:site_name" content="Blog of flyyoung02"/>
 
   
     <meta property="og:image" content=""/>
@@ -31,7 +31,7 @@
 
 <body>
   <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">Hexo</a></h1>
+  <h1><a href="/">Blog of flyyoung02</a></h1>
   <h2><a href="/"></a></h2>
 </div>
 <nav id="main-nav" class="alignright">
@@ -65,34 +65,22 @@
       
         <h1 id="利用云平台搭建个人博客"><a href="#利用云平台搭建个人博客" class="headerlink" title="利用云平台搭建个人博客"></a>利用云平台搭建个人博客</h1><h2 id="实验目的："><a href="#实验目的：" class="headerlink" title="实验目的："></a>实验目的：</h2><p>熟悉个人博客系统的搭建。<br>具体包括：注册Github账号，搭建Hexo环境并实现个人博客搭建，撰写实验报告。</p>
 <h2 id="一、前言：了解Github和Hexo"><a href="#一、前言：了解Github和Hexo" class="headerlink" title="一、前言：了解Github和Hexo"></a>一、前言：了解Github和Hexo</h2><p> Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。即把用户的markdown文件，按照指定的主题解析成静态网页。</p>
-<p><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%871.png" alt="Image text"></p>
+<p><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%871.png" alt="官网"></p>
 <p>上图为Hexo的官网。</p>
-<p><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%872.png" alt="Image text"></p>
+<p><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%872.png" alt="hexo特点"></p>
 <p>在本实验中我采用Windows系统搭建。</p>
-<h2 id="二、实验步骤、截图与分析"><a href="#二、实验步骤、截图与分析" class="headerlink" title="二、实验步骤、截图与分析"></a>二、实验步骤、截图与分析</h2><p>实验分以下几步进行：下载LTS-&gt;安装Hexo-&gt;创建github库-&gt;创建并添加密钥<br>1、进入node.js官网，下载LTS长期支持版。即下图中左侧的版本。</p>
-<p>如果没有安装好，在PowerShell中用npm命令会报错。</p>
-<p>如上图所示，安装完毕。</p>
-<p>用node -v npm -v测试，可以得到版本。</p>
-<p>如上图所示，安装完毕。</p>
-<p>查看操作系统的类型，为64位。</p>
-<p>2、安装Hexo<br>（1）打开终端（windows powershell）<br>在终端运行命令npm install hexo-cli -g    #完成hexo的安装<br>新建一个文件夹myblog用于保存你的本地博客文件<br>打开文件夹，右键打开git bash<br>在git bash运行命令<br>hexo init blog<br>cd blog         #进入blog文件</p>
-<p>刚开始出现这样的问题是因为没有配好环境变量，配好后得以解决。解决方法如下：<br>node.js安装后在git bash 中输入node -v验证是否安装成功，但是提示：sh.exe”: node :command not found，这是环境变量的问题导致的，选择计算机-属性-高级系统设置-环境变量。<br>先查看系统变量部分，发现安装后确实在系统变量的Path后追加了安装路径在打开用户环境变量部分查看了下Path的值，发现在最后系统自动加入了AppData\Roaming\npm，发现环境变量都已经默认设置了，但是为什么上面的输入不能反馈版本信息呢？需要再追加C:\Program Files\nodejs，然后关闭掉git base，重新打开（如何不重新打开也不能解决问题）后再次输入node -v，这样就能成功返回版本信息了。</p>
-<p>hexo s    #生成静态文件   </p>
-<p>这里可以在给出的网址<a target="_blank" rel="noopener" href="http://localhost:4000/%E7%9C%8B%E4%B8%80%E4%B8%8B%E6%95%88%E6%9E%9C%EF%BC%8C%E8%BF%90%E8%A1%8C%E5%AE%8Chexo">http://localhost:4000/看一下效果，运行完hexo</a> s命令后直接ctrl+C退出即可。</p>
+<h2 id="二、实验步骤、截图与分析"><a href="#二、实验步骤、截图与分析" class="headerlink" title="二、实验步骤、截图与分析"></a>二、实验步骤、截图与分析</h2><p>实验分以下几步进行：下载LTS-&gt;安装Hexo-&gt;创建github库-&gt;创建并添加密钥<br>1、进入node.js官网，下载LTS长期支持版。即下图中左侧的版本。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%873.png" alt="下载软件"><br>如果没有安装好，在PowerShell中用npm命令会报错。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%874.png" alt="报错"><br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%875.png" alt="报错"><br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%876.png" alt="报错"></p>
+<p>如上图所示，安装完毕。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%877.png" alt="安装"></p>
+<p>用node -v npm -v测试，可以得到版本。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%878.png" alt="版本"><br>如上图所示，安装完毕。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%879.png" alt="查看OS类型"><br>查看操作系统的类型，为64位。</p>
+<p>2、安装Hexo<br>（1）打开终端（windows powershell）<br>在终端运行命令npm install hexo-cli -g    #完成hexo的安装<br>新建一个文件夹myblog用于保存你的本地博客文件<br>打开文件夹，右键打开git bash<br>在git bash运行命令<br>hexo init blog<br>cd blog         #进入blog文件<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8710.png" alt="操作图"></p>
+<p>刚开始出现这样的问题是因为没有配好环境变量，配好后得以解决。解决方法如下：<br>node.js安装后在git bash 中输入node -v验证是否安装成功，但是提示：sh.exe”: node :command not found，这是环境变量的问题导致的，选择计算机-属性-高级系统设置-环境变量。<br>先查看系统变量部分，发现安装后确实在系统变量的Path后追加了安装路径在打开用户环境变量部分查看了下Path的值，发现在最后系统自动加入了AppData\Roaming\npm，发现环境变量都已经默认设置了，但是为什么上面的输入不能反馈版本信息呢？需要再追加C:\Program Files\nodejs，然后关闭掉git base，重新打开（如何不重新打开也不能解决问题）后再次输入node -v，这样就能成功返回版本信息了。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8711.png" alt="操作图"><br>hexo s    #生成静态文件<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8712.png" alt="操作图"><br>这里可以在给出的网址<a target="_blank" rel="noopener" href="http://localhost:4000/%E7%9C%8B%E4%B8%80%E4%B8%8B%E6%95%88%E6%9E%9C%EF%BC%8C%E8%BF%90%E8%A1%8C%E5%AE%8Chexo">http://localhost:4000/看一下效果，运行完hexo</a> s命令后直接ctrl+C退出即可。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8713.png" alt="操作图"></p>
 <p>3、创建github库，进github官网<br>本实验中，我的github:<br><a target="_blank" rel="noopener" href="https://github.com/flyyoung02/flyyoung02.github.io.git">https://github.com/flyyoung02/flyyoung02.github.io.git</a><br>  创建github账号，完成创建后建立一个新的库，库名是：flyyoung.github.io</p>
-<p>4、创建密钥并添加到github账号</p>
-<p>git config –global user.name “用户名”<br>git config –global user.email “邮箱”<br>ssh-keygen -t rsa<br>在第三步完成以后按三下回车，直接回车跳过<br>此时打开用户文件夹，里面有一个.ssh文件，打开，里面多了两个刚生成的文件，id_rsa和id_rsa.pub、</p>
-<p>将id_rsa.pub文中里的全部内容复制下来。把密钥添加到github账号。</p>
-<p>5、部署网页<br>站点目录下安装发布需要的插件</p>
-<p>在blog文件内先打开_config.yml文件，最下面的deploy部分做如下修改</p>
-<p>部分博客中出现过拼写错误（如上图brandh应该是branch），网址给错等，在实际操作中也出现过其它报错：</p>
-<p>blog文件夹内打开git bash运行命令<br>完成以下三步。<br>hexo clean    #清空缓存<br>hexo g    生成静态文件<br>hexo d    上传到网页上<br>如果反复出现连接问题报错，可能是网络问题，我们可以手动将相关文档上传到github上，再次输入网址测试。</p>
-<p>检验一下，到GitHub给出的我的网址上查看效果（是https:&#x2F;&#x2F;用户名.github.io，我的就是flyyoung02.github.io）</p>
-<p>在出现这样的界面后等待片刻。</p>
-<p>在手机端也可以正常访问了。</p>
-<p>6、发布文章<br>进入博客所在目录，右键打开 Git Bash Here，创建博文：<br>hexo new “My New Post”<br>然后 source 文件夹中会出现一个 My New Post.md 文件，就可以使用 Markdown 编辑器在该文件中撰写文章了。</p>
-<p>写完后运行下面代码将文章渲染并部署到 GitHub Pages 上完成发布。以后每次发布文章都是这两条命令。<br>hexo g   # 生成页面<br>hexo d   # 部署发布<br>也可以不使用命令自己创建 .md 文件，只需在文件开头手动加入如下格式 Front-matter 即可，写完后运行 hexo g 和 hexo d 发布。<br>我写了一篇新博文，在github上发布后，数分钟后可以看到发布效果。</p>
-<h2 id="三、结论分析与体会"><a href="#三、结论分析与体会" class="headerlink" title="三、结论分析与体会"></a>三、结论分析与体会</h2><p>在完成实验的过程中，遇到了一些问题。比如提示端口被占用，可以在原来命令后加-p5000解决。有时候也会遇到github连接不上，hexo d命令无法正常运行，这时可以转变思路，手动将相关文件夹上传到github上，刷新网页即可看到最新效果。<br>Hexo具有强大的优势，在本地安装，不需要部署到我们的服务器上。我们只需要在本地通过markdown编写文章，然后让Hexo帮我们生成静态的html页面，并通过Hexo将生成的html文件上传到我们的服务器。在实验过程中发现，托管在github上响应很慢，今后可以尝试选择部署在阿里云ECS服务器上。学习“云计算技术”课程时，我也深有体会了，服务在云端是未来的必然趋势。<br>查阅资料得到：在本地计算机搭建Hexo环境，Hexo通过generate命令将*.md文件渲染成静态的html页面，然后Hexo通过deploy命令触发git用户通过公钥免密登陆服务器，进而将静态页面推送到服务器的git仓库（repository）中。然后，服务器再通过钩子（git-hooks） 将静态页面checkout到网站的根目录下，进而实现博客的自动部署。具体过程如图中实线箭头所示。</p>
+<p>4、创建密钥并添加到github账号<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8714.png" alt="操作"></p>
+<p>git config –global user.name “用户名”<br>git config –global user.email “邮箱”<br>ssh-keygen -t rsa<br>在第三步完成以后按三下回车，直接回车跳过<br>此时打开用户文件夹，里面有一个.ssh文件，打开，里面多了两个刚生成的文件，id_rsa和id_rsa.pub。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8715.png" alt="文件夹"><br>将id_rsa.pub文中里的全部内容复制下来。把密钥添加到github账号。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8716.png" alt="添加密钥"></p>
+<p>5、部署网页<br>站点目录下安装发布需要的插件<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8717.png" alt="安装"><br>在blog文件内先打开_config.yml文件，最下面的deploy部分做如下修改<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8718.png" alt="修改"><br>部分博客中出现过拼写错误（如上图brandh应该是branch，后来发现应该把branch改成main），网址给错等，在实际操作中也出现过其它报错：<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8719.png" alt="报错1"><br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8720.png" alt="报错2"><br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8721.png" alt="报错3"><br>blog文件夹内打开git bash运行命令<br>完成以下三步。<br>hexo clean    #清空缓存<br>hexo g    生成静态文件<br>hexo d    上传到网页上<br>如果反复出现连接问题报错，可能是网络问题，我们可以手动将相关文档上传到github上，再次输入网址测试。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8722.png" alt="报错"><br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8723.png" alt="手动上传"></p>
+<p>检验一下，到GitHub给出的我的网址上查看效果（是https:&#x2F;&#x2F;用户名.github.io，我的就是flyyoung02.github.io）<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8724.png" alt="查看效果"><br>在出现这样的界面后等待片刻。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8725.png" alt="等待"><br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8726.png" alt="手机端访问"><br>在手机端也可以正常访问了。</p>
+<p>6、发布文章<br>进入博客所在目录，右键打开 Git Bash Here，创建博文：<br>hexo new “My New Post”<br>然后 source 文件夹中会出现一个 My New Post.md 文件，就可以使用 Markdown 编辑器在该文件中撰写文章了。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8727.png" alt="创建新的md文件"><br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8728.png" alt="新的md文件已经被创建"><br>写完后运行下面代码将文章渲染并部署到 GitHub Pages 上完成发布。以后每次发布文章都是这两条命令。<br>hexo g   # 生成页面<br>hexo d   # 部署发布<br>也可以不使用命令自己创建 .md 文件，只需在文件开头手动加入如下格式 Front-matter 即可，写完后运行 hexo g 和 hexo d 发布。<br>我写了一篇新博文，在github上发布后，数分钟后可以看到发布效果。在最后我还将博客风格换为了更加清爽的light主题，只需修改theme，再重复以上步骤即可。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8729.png" alt="发布的一篇博文"></p>
+<h2 id="三、结论分析与体会"><a href="#三、结论分析与体会" class="headerlink" title="三、结论分析与体会"></a>三、结论分析与体会</h2><p>在完成实验的过程中，遇到了一些问题。比如提示端口被占用，可以在原来命令后加-p5000解决。有时候也会遇到github连接不上，hexo d命令无法正常运行，这时可以转变思路，手动将相关文件夹上传到github上，刷新网页即可看到最新效果。<br>Hexo具有强大的优势，在本地安装，不需要部署到我们的服务器上。我们只需要在本地通过markdown编写文章，然后让Hexo帮我们生成静态的html页面，并通过Hexo将生成的html文件上传到我们的服务器。在实验过程中发现，托管在github上响应很慢，今后可以尝试选择部署在阿里云ECS服务器上。学习“云计算技术”课程时，我也深有体会了，服务在云端是未来的必然趋势。<br><img src="https://github.com/flyyoung02/flyyoung02.github.io/raw/main/img/%E5%9B%BE%E7%89%8730.png" alt="原理图"><br>查阅资料得到：在本地计算机搭建Hexo环境，Hexo通过generate命令将*.md文件渲染成静态的html页面，然后Hexo通过deploy命令触发git用户通过公钥免密登陆服务器，进而将静态页面推送到服务器的git仓库（repository）中。然后，服务器再通过钩子（git-hooks） 将静态页面checkout到网站的根目录下，进而实现博客的自动部署。具体过程如图中实线箭头所示。</p>
 
       
     </div>
@@ -172,7 +160,7 @@
   </div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2023 John Doe
+  &copy; 2023 Ziyang
   
 </div>
 <div class="clearfix"></div></footer>
